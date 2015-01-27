@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--these are some things that I was playing around with in order to get the washingtonpost desired effect-->
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
@@ -11,30 +13,41 @@ $(document).ready(function(){
   });
 	  
 });
-$(document).ready(function() {
-    var $blue = $('#blue');
-    var $red = $('#red');
-    var $green = $('#green');
-    var $black = $('#black');
-    var $purple = $('#purple');
-    var $orange = $('#orange');
+
+//$(document).ready(function() {
+  //  var $blue = $('#blue');
+    //var $red = $('#red');
+  //  var $green = $('#green');
+    //var $black = $('#black');
+    //var $purple = $('#purple');
+    //var $orange = $('#orange');
 
 
-    var myArray = [$blue, $red, $green, $black, $purple, $orange];
+   // var myArray = [$blue, $red, $green, $black, $purple, $orange];
 
     $('#hide').click(function() {
         $.each(myArray, function() {
             $(this).hide();
         });
      });
-});
+    
+    $(function() {
+  $('#hidden').hide().click(function(e) {
+    e.stopPropagation();
+  });      
+  $("a.cart-button").click(function(e) {
+    $('#hidden').animate({ opacity: "toggle" });
+    $("#shopping-cart").animate({"height": "toggle"}, { duration: 550 });
+    e.stopPropagation();
+  });
+  $(document).click(function() {
+    $('#hidden').fadeOut();
+  });
+       });
 
 
 
 </script>
-
-
-
 </head>
 
 <body>
@@ -42,10 +55,20 @@ $(document).ready(function() {
 
 <h3>Demonstrate fadeTo() with different parameters.</h3>
 <button>Click to fade boxes</button> 
-<p><a href="#">Click to return colors</a></p>
+
 <div id="div1" style="width:80px;height:80px;background-color:purple;"></div><br>
 <div id="div2" style="width:80px;height:80px;background-color:orange;"></div><br>
 <div id="div3" style="width:80px;height:80px;background-color:gray;"></div>
+
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+ <p>THIS IS A SHOW AND HIDE</p>
+        
+        <button><a href="#" class="cart-button">Show/Hide</a></button>
+        <div id="hidden"><img src="http://www.worldatlas.com/webimage/countrys/africa/mwafrica.gif"></div>
 
 
 <!---
