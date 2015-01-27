@@ -9,6 +9,8 @@ At the end of 2011, the Malawi Ministry of Health (MOH) implemented an innovativ
 Will get final number and implement in this interactive (see idea below)
 http://www.cdc.gov/mmwr/preview/mmwrhtml/mm6208a3.htm 
 
+See my design plans here: https://docs.google.com/document/d/1Htyw9r99XeobCHYFW3wIMziAcqxBBfB72JCxAi3BnQM/edit
+
 Similar to the Washington Post graphic, do a picture that represents infants in pacifiers and you can toggle between
 : All babies born each year in malawi,
 , percentage of babies that would be transmitted AIDS by their mother without care
