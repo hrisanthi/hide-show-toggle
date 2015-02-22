@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <title>The causes of maternal deaths in Malawi</title>
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+  $("#cf_onclick").click(function() {
+  $("#cf2 img.top").toggleClass("transparent");
+});
+});
+</script>
+
+</head>
+    
+<body>
+
+<h1>The causes of maternal deaths in malawi</h1>
+
+<div id="cf2" class="shadow">
+  <img class="bottom" src="images/all.png" />
+  <img class="top" src="images/blue.png" />
+</div>
+<button><p id="cf_onclick">Click me to toggle</p></button>
+
+
+</body>
+
+<style>
+#cf2 {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+#cf2 img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf2 img.transparent {
+opacity:0;
+}
+#cf_onclick {
+cursor:pointer;
+}
+
+
+</style>
+</html> 
